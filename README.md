@@ -1,26 +1,25 @@
 # V2Ray Heroku
 
-**若需部署 V2Ray VLESS，请转到 [vless](https://github.com/bclswl0827/v2ray-heroku/tree/vless) 分支。**
+**Để triển khai V2Ray VLESS, hãy chuyển đến [vless] (https://github.com/bclswl0827/v2ray-heroku/tree/vless). **
 
-## 概述
+## Tổng quan
 
-本专案用于在 Heroku 上部署 V2Ray WebSocket，在合理使用的程度下，本镜像不会因为大量占用资源而导致封号。
+Dự án này được sử dụng để triển khai V2Ray WebSocket trên Heroku, trong phạm vi sử dụng hợp lý, hình ảnh này sẽ không bị cấm do lượng tài nguyên lớn.
 
-部署完成后，每次启动应用时，运行的 V2Ray 将始终为最新版本
+Sau khi được triển khai, V2Ray sẽ luôn chạy với phiên bản mới nhất mỗi khi ứng dụng được khởi chạy
 
-## 部署
+## Triển khai
 
-### 步骤
-
- 1. Fork 本专案到自己的 GitHub 账户（用户名以 `example` 为例）
- 2. 修改专案名称，注意不要包含 `v2ray` 和 `heroku` 两个关键字（修改后的专案名以 `demo` 为例）
- 3. 修改 `README.md`，将 `bclswl0827/v2ray-heroku` 替换为自己的内容（如 `example/demo`）
+### Bước
+ 1. Chuyển dự án này vào tài khoản GitHub của riêng bạn (tên người dùng là `example`)
+ 2. Sửa đổi tên dự án, hãy cẩn thận không bao gồm các từ khóa `v2ray` và` heroku` (tên dự án đã sửa đổi lấy `demo` làm ví dụ)
+ 3. Sửa đổi `README.md`, thay thế` bclswl0827 / v2ray-heroku` bằng nội dung của riêng bạn (chẳng hạn như `example / demo`)
 
 > [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/bclswl0827/v2ray-heroku)
 
- 4. 回到专案首页，点击上面的链接以部署 V2Ray
+4. Quay lại trang chủ của dự án và nhấp vào liên kết ở trên để triển khai V2Ray
 
-### 变量
+### Biến đổi
 
 | Đối số | Mặc định | Diễn giải |
 | :--- | :--- | :--- |
@@ -28,15 +27,15 @@
 | `AID` | `64` | AlterID，Số từ 0 đến 65535 |
 | `WSPATH` | `/` | WebSocket  HTTP |
 
-## 接入 CloudFlare
+## Truy cập vào CloudFlare
 
-以下两种方式均可以将应用接入 CloudFlare，从而在一定程度上提升速度。
+Hai phương pháp sau có thể kết nối ứng dụng với CloudFlare, có thể cải thiện tốc độ ở một mức độ nhất định.
 
- 1. 为应用绑定域名，并将该域名接入 CloudFlare
- 2. 通过 CloudFlare Workers 反向代理
+ 1. Liên kết tên miền với ứng dụng và kết nối tên miền với CloudFlare
+ 2. Reverse proxy thông qua CloudFlare worker
 
-## 注意
+## Để ý
 
- 1. **请勿滥用本专案，类似 Heroku 的免费服务少之又少，且用且珍惜**
- 2. 若使用域名接入 CloudFlare，请考虑启用 TLS 1.3
- 3. AWS 绝大部分 IPv4 地址已被 Twitter 屏蔽
+ 1. ** Đừng lạm dụng dự án này, có rất ít dịch vụ miễn phí như Heroku, hãy sử dụng và trân trọng **
+ 2. Nếu sử dụng tên miền để truy cập CloudFlare, vui lòng xem xét bật TLS 1.3
+ 3. Hầu hết các địa chỉ AWS IPv4 đều bị Twitter chặn
