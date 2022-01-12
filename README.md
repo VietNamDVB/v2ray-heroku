@@ -1,6 +1,6 @@
 # V2Ray Heroku
 
-**Để triển khai V2Ray VLESS, hãy chuyển đến [vless] (https://github.com/bclswl0827/v2ray-heroku/tree/vless). **
+**Để triển khai V2Ray VLESS, hãy chuyển đến [vless] (https://github.com/VietNamDVB/v2ray-heroku). **
 
 ## Tổng quan
 
