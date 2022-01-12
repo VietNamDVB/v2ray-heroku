@@ -22,12 +22,11 @@
 
 ### 变量
 
-对部署时需设定的变量名称做如下说明。
-
-| 变量 | 默认值 | 说明 |
+| Đối số | Mặc định | Diễn giải |
 | :--- | :--- | :--- |
-| `ID` | `ad806487-2d26-4636-98b6-ab85cc8521f7` | VMess 用户主 ID，用于身份验证，为 UUID 格式 |
-| `WSPATH` | `/` | WebSocket 所使用的 HTTP 协议路径 |
+| `ID` | `ad806487-2d26-4636-98b6-ab85cc8521f7` | VMess user ID |
+| `AID` | `64` | AlterID，Số từ 0 đến 65535 |
+| `WSPATH` | `/` | WebSocket  HTTP |
 
 ## 接入 CloudFlare
 
